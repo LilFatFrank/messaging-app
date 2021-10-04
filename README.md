@@ -2,6 +2,21 @@
 
 This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
 
+## Functionality
+
+Technology used: React, Redux, Sass
+Also made use of the ant.design library for components.
+
+It is a simple messaging app. No authentication required.
+
+The user chooses an identity. It is immediately redirected to choose from the old conversations. The user also has an option to create a new conversation.
+
+When choosing an old conversation, the user is immediately redirected to the messaging view of the conversation with the 10 most recent messages available. You can also send a message and it updates at the same moment.
+
+When choosing to create a new conversatoin, the user can set a title for the conversation. After setting the title, the user is redirected to the messaging view and can start conversing.
+
+A small component library is created for reusable components in the code. And the code is properly structured into pages.
+
 ## Available Scripts
 
 In the project directory, you can run:
