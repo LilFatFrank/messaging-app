@@ -1,0 +1,26 @@
+@import "../../styles/mixins.scss";
+
+.select-chats {
+  @include flex("", "", 20px);
+  .title {
+    @include flex(center, column, "");
+  }
+  .chats-list {
+    @include flex("", column, 5px);
+    min-width: 200px;
+    max-width: 500px;
+    height: auto;
+    padding: 20px;
+    &.conversation {
+      @include flex("", column, 10px);
+    }
+  }
+  .link {
+    position: sticky;
+    left: 100%;
+    bottom: 0px;
+  }
+  .selected {
+    background: var(--lightgray);
+  }
+}

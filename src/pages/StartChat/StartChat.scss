@@ -1,0 +1,22 @@
+@import "../../styles/mixins.scss";
+
+.start-chat {
+  @include flex("", "", 20px);
+  .title {
+    @include flex(center, column, "");
+    text-align: center;
+  }
+  .participants {
+    @include flex(center, "", "");
+    justify-content: space-around;
+    width: 100%;
+    flex-wrap: wrap;
+  }
+  .input-area {
+    width: 100%;
+    margin-top: auto;
+    margin-bottom: 10px;
+    @include flex(center, "", 20px);
+    justify-content: center;
+  }
+}

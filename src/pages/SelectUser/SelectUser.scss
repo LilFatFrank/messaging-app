@@ -1,0 +1,12 @@
+@import "../../styles/mixins.scss";
+
+.select-user {
+  gap: 30px;
+  .user-list {
+    @include flex("", column, 10px);
+    min-width: 200px;
+    max-width: 500px;
+    height: auto;
+    padding: 20px;
+  }
+}

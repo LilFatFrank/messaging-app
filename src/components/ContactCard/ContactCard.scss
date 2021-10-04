@@ -1,0 +1,17 @@
+@import "../../styles/mixins.scss";
+
+.card {
+  @include flex(center, "", 10px);
+  cursor: pointer;
+  .avatar {
+    text-align: center;
+    border: 3px solid;
+    border-radius: 50%;
+  }
+  .details {
+    @include flex("", column, 5px);
+    &.conversation {
+      @include flex(flex-start, column, 5px);
+    }
+  }
+}

@@ -1,0 +1,28 @@
+@import "../../styles/mixins.scss";
+
+.message {
+  @include flex("", column, 30px);
+  .title {
+    width: 100%;
+    position: sticky;
+    background: var(--secondary);
+    top: -10px;
+    left: 0;
+    z-index: 2;
+    padding: 10px;
+  }
+  .list {
+    width: 100%;
+    @include flex(flex-start, column, 10px);
+    overflow: auto;
+  }
+  .input-area {
+    width: 100%;
+    position: sticky;
+    padding: 10px;
+    bottom: -10px;
+    background: var(--secondary);
+    @include flex(center, "", 20px);
+    justify-content: center;
+  }
+}
